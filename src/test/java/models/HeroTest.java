@@ -43,4 +43,21 @@ class HeroTest {
         assertTrue(Hero.getAllInstances().contains(newHero));
         assertTrue(Hero.getAllInstances().contains(another));
     }
+
+    @Test
+    void newHero_getId_Int() {
+        Hero.clearAllHeroes();
+        Hero newHero = Hero.setUPNewHero();
+        Hero another = Hero.setUPNewHero();
+        Hero another1 = Hero.setUPNewHero();
+        assertEquals(3,another1.getId());
+    }
+
+    @Test
+    void newHero_findById_id() {
+        Hero.clearAllHeroes();
+        Hero newHero =Hero.setUPNewHero();
+        Hero another =Hero.setUPNewHero();
+        assertEquals(2,Hero.findById(another.getId()).getId());
+    }
 }
