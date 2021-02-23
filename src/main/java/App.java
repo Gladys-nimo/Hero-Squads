@@ -1,26 +1,35 @@
-//
-//import spark.ModelAndView;
-//import spark.template.handlebars.HandlebarsTemplateEngine;
-//
-//import java.util.HashMap;
-//import java.util.Map;
-//
-//import static spark.Spark.*;
-//public class App {
-//    public static void main(String[] args){
-//        staticFileLocation("/public");
-//
-//
-//     get("/",(request, response) -> {
-//         Map<String, Object> model = new HashMap<>();
-//         return new ModelAndView(model,"index.hbs");
-//     }, new HandlebarsTemplateEngine());
-//     get("/", ((request, response) -> {
-//         Map<String, Object> model = new HashMap<>();
-//         return new ModelAndView(model, "hero-form,hbs");
-//     }));
-//
-//
-//
-//    }
-//}
+
+import models.Hero;
+import spark.ModelAndView;
+import spark.template.handlebars.HandlebarsTemplateEngine;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import static spark.Spark.*;
+public class App {
+    public static void main(String[] args){
+        staticFileLocation("/public");
+
+
+     get("/",(request, response) -> {
+         Map<String, Object> model = new HashMap<>();
+         return new ModelAndView(model,"index.hbs");
+     }, new HandlebarsTemplateEngine());
+
+
+     get("/hero-form", (request, response) -> {
+         Map<String, Object> model = new HashMap<>();
+         return new ModelAndView(model, "hero-form,hbs");
+     }, new HandlebarsTemplateEngine());
+
+    get("/hero", (request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        ArrayList<Hero> hero = Hero.getAllInstances();
+        model.put("hero",hero);
+        return new ModelAndView(model, "hero.hbs");
+    }, new HandlebarsTemplateEngine());
+
+    }
+}
