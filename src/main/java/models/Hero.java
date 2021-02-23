@@ -54,7 +54,7 @@ public class Hero {
     public static Hero setUPNewHero(){
         return new Hero("Melisa",23,"flying","fire");
     }
-    public static Hero setUpNewHero(){
+    public static Hero setUpNewHero1(){
         return new Hero("",24,"","");
     }
 }

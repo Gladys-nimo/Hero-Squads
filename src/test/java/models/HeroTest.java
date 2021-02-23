@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HeroTest {
     @Test
-    void newHero_instantiatesCorrectly_true() {
+    void newHero_instantiatesCorrectly_true() throws Exception{
         Hero newHero = Hero.setUPNewHero();
         assertTrue(newHero instanceof Hero);
     }
@@ -34,5 +34,13 @@ class HeroTest {
     void newHero_getWeakness_String() {
         Hero newHero = Hero.setUPNewHero();
         assertEquals("fire",newHero.getWeakness());
+    }
+
+    @Test
+    void newHero_getAllInstances_true() {
+        Hero newHero = Hero.setUPNewHero();
+        Hero another = Hero.setUPNewHero();
+        assertTrue(Hero.getAllInstances().contains(newHero));
+        assertTrue(Hero.getAllInstances().contains(another));
     }
 }
