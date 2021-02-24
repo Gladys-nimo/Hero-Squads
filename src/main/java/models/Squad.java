@@ -24,7 +24,7 @@ public class Squad {
         return SquadId;
     }
     public static Squad findBySquadId(int id) {
-        return instances.get(id-1);
+        return instances.get(id);
     }
 
     public String getSquadName() {

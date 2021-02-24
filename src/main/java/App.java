@@ -9,9 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static spark.Spark.*;
+import static spark.debug.DebugScreen.enableDebugScreen;
+
 public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
+        enableDebugScreen();
 
 
         get("/", (request, response) -> {
@@ -52,8 +55,9 @@ public class App {
             model.put("squads", squads);
             ArrayList<Hero> members = Hero.getAllInstances();
             model.put("heroes", members);
-            Squad newSquad = Squad.findBySquadId(1);
-            model.put("allSquadMembers", newSquad.getSquadMembers());
+            ArrayList<Squad> newSquad = Squad.getInstances();
+//            Squad newSquad = Squad.findBySquadId(1);
+            model.put("allSquadMembers", newSquad);
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 

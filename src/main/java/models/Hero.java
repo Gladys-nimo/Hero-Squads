@@ -42,7 +42,7 @@ public class Hero {
         return id;
     }
     public static Hero findById(int id){
-        return instances.get(id-1);
+        return instances.get(id);
     }
 
     public static ArrayList<Hero> getAllInstances() {
