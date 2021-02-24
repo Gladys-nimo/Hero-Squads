@@ -23,6 +23,7 @@ public class Squad {
     public int getSquadId() {
         return SquadId;
     }
+    public static Squad findBySquadId(int id) {return instances.get(id-1);}
 
     public String getSquadName() {
         return squadName;

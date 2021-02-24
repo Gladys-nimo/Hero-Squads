@@ -69,10 +69,9 @@ class SquadTest {
     @Test
     public void setNewMember_hero(){
         Hero.clearAllHeroes();
-        Hero newHero = Hero.setUpNewHero();
+        Hero newHero = Hero.setUPNewHero();
         Squad testSquad = Squad.setUpNewSquad();
         testSquad.setSquadMembers(newHero);
-
         assertEquals(1,testSquad.getSquadMembers().get(0).getId());
     }
 }
