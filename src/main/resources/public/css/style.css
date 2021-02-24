@@ -27,7 +27,35 @@ font-family: 'Tangerine', cursive;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.24);
   color: white;
 }
-.btn-green{
-	background: green;
+.btn-crimsom{
+	background: crimsom;
 	margin-top: 5px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar,
+ #newMember::-webkit-scrollbar{
+  width: 5px;
+  background-color: rgb(119, 119, 117);
+}
+body::-webkit-scrollbar-thumb,
+ #newMember::-webkit-scrollbar-thumb{
+  background-color: rgb(48, 116, 52);
+  border-radius: 30px;
+}
+
+header{
+  position: absolute;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+
+}
+.nav-hr{
+  border: 0.3px solid rgb(48, 116, 52);
+  box-shadow: 0 0 5px rgb(115, 124, 110);
+  position: absolute;
+  width: 100%;
+  top: 45px;
 }
