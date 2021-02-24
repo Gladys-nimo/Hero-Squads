@@ -1,6 +1,0 @@
-models/Hero.java
- models.Hero
-App.java
- App
-models/Squad.java
- models.Squad
