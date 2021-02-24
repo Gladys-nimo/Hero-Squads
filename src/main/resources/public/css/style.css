@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+ font-family: 'Castoro', serif;
+}
+a{
+  text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+.btns{
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 5px 20px;
+font-family: 'Castoro', serif;
+  border-radius: 20px;
+  margin-top: 5px;
+
+}
+.btns:hover{
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.24);
+  color: white;
+}
+.btn-green{
+	background: green;
+	margin-top: 5px;
+}
