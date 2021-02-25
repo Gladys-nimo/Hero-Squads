@@ -7,9 +7,7 @@
   transition: all 0.2s ease-out;
 font-family: 'Tangerine', cursive;
 }
-body {
-background-color: red;
-}
+
 nav{
   position: absolute;
   top: 23px;

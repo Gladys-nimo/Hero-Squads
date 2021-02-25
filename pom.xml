@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.Hero-squad</groupId>
-    <artifactId>hero-squad</artifactId>
+    <artifactId>Hero-squad</artifactId>
     <version>1.0</version>
 
     <dependencies>
@@ -74,7 +74,7 @@
                     <!-- Change this to YOUR application name! -->
                     <appName>gladys-hero-squads</appName>
                     <processTypes>
-                        <web>java -jar target/hero-squad-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/Hero-squad-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
