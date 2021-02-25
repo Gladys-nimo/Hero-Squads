@@ -10,3 +10,7 @@ gladys-heroes-squads.herokuapp.com/
 1. **Java**
 2. Download **IntelliJ**
 3. Use **Spark** and **HandleBars** as template.
+# Licence
+MIT
+# COPYRIGHT
+GLADYS
