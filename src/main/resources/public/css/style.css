@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s ease-out;
-font-family: 'Tangerine', cursive;
+font-family: 'Shippori Mincho', serif;
 }
 
 nav{
   position: absolute;
   top: 23px;
   right: 10%;
-  font-family: 'Abel', sans-serif;
+font-family: 'Shippori Mincho', serif;
   font-size: large;
   background: rgb(0, 22, 8);
 }
 nav>ul li{
   display: inline-block;
   padding: 10px 30px;
-  font-size: 1em;
+  font-size: 2em;
   color: white;
   cursor: pointer;
 }
@@ -46,10 +46,25 @@ nav>ul li{
 .hero-image{
 background-image: url('/images/supergirl.jpg');
 height: 500px;
+background-color: crimsom;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
+}
+.hero-btn{
+  background: rgb(11, 68, 35);
+  color: white;
+  padding: 5px;
+  width: 60%;
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  cursor: pointer;
+font-family: 'Shippori Mincho', serif;
+  font-size: 25px;
+  outline: none;
+  z-index: 5;
 }
 .form-cont{
   position: relative;
@@ -59,8 +74,7 @@ position: relative;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 10vh;
-font-family: 'Tangerine', cursive;
-}
+font-family: 'Shippori Mincho', serif;}
 .form-cont>div{
   background: rgba(255, 255, 255, 0.089);
   position: relative;
@@ -86,7 +100,7 @@ font-family: 'Tangerine', cursive;
 }
 .form>h1{
   color: white;
-  font-size: 2.3em;
+  font-size: 4em;
 }
 .form>input[type=text],
 .form>input[type=number]{
@@ -100,7 +114,7 @@ font-family: 'Tangerine', cursive;
   outline: none;
   display: block;
   animation: formLd 1.2s linear 1;
-  font-size: 1em;
+  font-size: 6em;
 }
 .form>input[type=text]:nth-child(even){
 	animation: formLd 0.8s linear 1;

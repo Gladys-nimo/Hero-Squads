@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static spark.Spark.*;
-import static spark.debug.DebugScreen.enableDebugScreen;
+
 
 public class App {
     static int getHerokuAssignedPort() {
@@ -23,7 +23,7 @@ public class App {
 
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
-        enableDebugScreen();
+
 
 
         get("/", (request, response) -> {
