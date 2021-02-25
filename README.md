@@ -13,4 +13,5 @@ gladys-heroes-squads.herokuapp.com/
 # Licence
 MIT
 # COPYRIGHT
-GLADYS
+Gladys
+2021
