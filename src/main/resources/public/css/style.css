@@ -7,10 +7,7 @@
   transition: all 0.2s ease-out;
 font-family: 'Tangerine', cursive;
 }
-body {
-background: url('/images/heros.jpg');
-background-repeat: no-repeat;
-}
+
 nav{
   position: absolute;
   top: 23px;
@@ -45,6 +42,14 @@ nav>ul li{
 	background: green;
 	color: white;
 	border-radius: 20px;
+}
+.hero-image{
+background-image: url('/images/supergirl.jpg');
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 .form-cont{
   position: relative;
