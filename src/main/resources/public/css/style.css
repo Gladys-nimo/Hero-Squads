@@ -9,13 +9,14 @@ font-family: 'Tangerine', cursive;
 }
 body {
 background: url('/images/heros.jpg');
+background-repeat: no-repeat;
 }
 nav{
   position: absolute;
   top: 23px;
   right: 10%;
   font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-size: large;
   background: rgb(0, 22, 8);
 }
 nav>ul li{
@@ -32,7 +33,7 @@ nav>ul li{
   margin-top: 15vh;
   min-height: 10vh;
   background: rgb(8, 22, 8);
-  color: red;
+  color: white;
   box-shadow: 0 0 10px rgba(255,255,255,0.4);
 }
 .landing-pg h2{
@@ -53,7 +54,7 @@ nav>ul li{
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 10vh;
- font-family: 'Castoro', serif;
+font-family: 'Tangerine', cursive;
 }
 .form-cont>div{
   background: rgba(255, 255, 255, 0.089);
